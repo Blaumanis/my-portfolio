@@ -145,7 +145,7 @@ const Contacts = () => {
         </TitleBox>
         <ContactIcon />
       </TitleContainer>
-      <Form action='POST' data-netlify='true'>
+      <Form name="contact" action='POST' data-netlify='true'>
         <InputGroup>
           <Label>name</Label>
           <Input name='name' />
