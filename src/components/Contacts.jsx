@@ -12,7 +12,7 @@ const Container = styled.section`
   background-color: #f1f1f1;
   min-height: 100vh;
   @media (max-width: 400px) {
-    padding: 1.5rem .5rem;
+    padding: 1.5rem 0.5rem;
   }
 `
 
@@ -145,14 +145,14 @@ const Contacts = () => {
         </TitleBox>
         <ContactIcon />
       </TitleContainer>
-      <Form name="contact" action='POST' data-netlify='true'>
+      <Form name='contact' action='POST' data-netlify='true'>
         <InputGroup>
           <Label>name</Label>
-          <Input name='name' />
+          <Input type='text' name='name' />
         </InputGroup>
         <InputGroup>
           <Label>email</Label>
-          <Input name='email' />
+          <Input type='email' name='email' />
         </InputGroup>
         <InputGroup>
           <Label>message</Label>
