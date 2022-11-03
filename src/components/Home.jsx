@@ -12,12 +12,23 @@ const Container = styled.main`
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  animation: fadeIn 1s ease-in;
   @media (max-width: 630px) {
     gap: 0;
     padding-top: 3rem;
   }
   @media (max-width: 425px) {
     padding: 3rem 0.5rem;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `
 

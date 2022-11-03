@@ -15,11 +15,22 @@ const Container = styled.nav`
   background-color: rgb(255, 182, 0, 0.9);
   gap: 3rem;
   z-index: 2;
+  animation: fadeIn 1s ease-in;
   @media (max-width: 630px) {
     justify-content: flex-end;
   }
   @media (max-width: 425px) {
     padding: 1.5rem 0;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   svg {

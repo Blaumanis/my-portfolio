@@ -145,18 +145,18 @@ const Contacts = () => {
         </TitleBox>
         <ContactIcon />
       </TitleContainer>
-      <Form>
+      <Form action='POST' data-netlify='true'>
         <InputGroup>
           <Label>name</Label>
-          <Input />
+          <Input name='name' />
         </InputGroup>
         <InputGroup>
           <Label>email</Label>
-          <Input />
+          <Input name='email' />
         </InputGroup>
         <InputGroup>
           <Label>message</Label>
-          <TextArea rows='5' />
+          <TextArea name='message' rows='5' />
         </InputGroup>
         <Submit type='submit'>Submit</Submit>
       </Form>
