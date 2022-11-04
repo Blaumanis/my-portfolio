@@ -90,14 +90,24 @@ const Link = styled.a`
 const Navbar = () => {
   const links = ['home', 'skills', 'projects', 'contacts']
   const [isOpen, setIsOpen] = useState(false)
+  const [isClicked,setIsClicked]  = useState(false)
+
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+    if(isOpen === true) {
+      setIsClicked(true)
+    } else {
+      setIsClicked(false)
+    }
+  }
 
   return (
     <Container>
-      {isOpen ? <SmallNavbar links={links} /> : <></>}
+      {isOpen ? <SmallNavbar links={links} handleClick={handleClick} isClicked={isClicked} /> : <></>}
         <Logo href='#home'>
           <LogoImg src='./images/logo.png' />
         </Logo>
-      <BiMenu onClick={() => setIsOpen(!isOpen)} />
+      <BiMenu onClick={() => handleClick()} />
       {links.map((link) => (
         <Link href={`#${link}`}>{link}</Link>
       ))}

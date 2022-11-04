@@ -126,7 +126,7 @@ const Home = () => {
             Hi <br></br> I'm <Name>Alberts</Name>, <br></br> frontend developer
           </Title>
         </TitleContainer>
-        <CTA href='#contacts'>My Projects</CTA>
+        <CTA href='#projects'>My Projects</CTA>
       </Container>
     </>
   )

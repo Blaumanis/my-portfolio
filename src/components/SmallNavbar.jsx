@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.section`
@@ -12,7 +12,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(255, 182, 0);
+  background-color: rgb(255, 182, 9,.9);
   gap: 3rem;
   z-index: 2;
   @media (min-width: 630px) {
@@ -47,13 +47,17 @@ const Link = styled.a`
   }
 `
 
-const SmallNavbar = ({ links }) => {
+const SmallNavbar = ({ links, handleClick, isClicked }) => {
+
   return (
-    <Container>
+    <>
+    {!isClicked ? <Container>
       {links.map((link) => (
-        <Link href={`#${link}`}>{link}</Link>
+        <Link onClick={()=> handleClick()} href={`#${link}`}>{link}</Link>
       ))}
-    </Container>
+      </Container> : <></>
+    }
+    </>
   )
 }
 

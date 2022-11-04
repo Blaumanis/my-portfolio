@@ -24,6 +24,7 @@ const TitleContainer = styled.div`
   gap: 1.5rem;
   padding: 1rem;
   @media (max-width: 630px) {
+    margin-top: 3rem;
     flex-direction: column;
   }
   @media (max-width: 400px) {

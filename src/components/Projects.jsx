@@ -23,6 +23,7 @@ const TitleWrapper = styled.article`
   justify-content: center;
   @media (max-width: 630px) {
     flex-direction: column-reverse;
+    margin-top: 2rem;
   }
 
   svg {
@@ -80,8 +81,6 @@ const ProjectFilter = styled.div`
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 1rem;
-  @media (max-width: 630px) {
-  }
 `
 
 const FilterButton = styled.button`
@@ -96,9 +95,6 @@ const FilterButton = styled.button`
   &:hover {
     background-color: #141824;
     color: #ffb600;
-  }
-  @media (max-width: 630px) {
-    /* font-size: 1.15rem; */
   }
 `
 
