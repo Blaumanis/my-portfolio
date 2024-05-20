@@ -95,5 +95,13 @@ const data = [
     siteUrl: 'https://gamepsr.netlify.app/',
     img: './images/rps.png',
   },
+  {
+    id: 13,
+    title: 'Product Filtering',
+    category: 'react',
+    codeUrl: 'https://github.com/Blaumanis/upstash-ecommerce',
+    siteUrl: 'https://master.d3ju3utrsrjnkm.amplifyapp.com/',
+    img: './images/productFilter.png',
+  },
 ]
 export default data

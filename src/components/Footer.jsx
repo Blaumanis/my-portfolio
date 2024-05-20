@@ -39,6 +39,7 @@ const Link = styled.a`
 `
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <Container>
       <InfoContainer>
@@ -57,9 +58,7 @@ const Footer = () => {
           </Link>
         </LinkBox>
       </InfoContainer>
-      <Desc>
-        © 2022 Blaumanis. All Rights Reserved.
-      </Desc>
+      <Desc>© {year} Blaumanis. All Rights Reserved.</Desc>
     </Container>
   )
 }
